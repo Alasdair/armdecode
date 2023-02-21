@@ -1,0 +1,9 @@
+(executable
+ (name armdecode)
+ (modes (native plugin))
+ (libraries libsail))
+
+(install
+  (section (site (libsail plugins)))
+  (package armdecode)
+  (files armdecode.cmxs))
